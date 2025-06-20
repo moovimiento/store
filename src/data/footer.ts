@@ -4,7 +4,7 @@ export const footerDetails: {
   subheading: string;
   quickLinks: IMenuItem[];
   email: string;
-  telephone: string;
+  // telephone: string;
   socials: ISocials;
 } = {
   subheading: "Energía natural, concentrada en frutos secos.",
@@ -23,7 +23,7 @@ export const footerDetails: {
     },
   ],
   email: "goalritmo@gmail.com",
-  //   telephone: "+1 (123) 456-7890",
+  // telephone: "+54 (351) 153239624",
   socials: {
     // twitter: "https://twitter.com/moovimiento",
     // youtube: 'https://youtube.com',

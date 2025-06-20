@@ -25,7 +25,7 @@ const Header: React.FC = () => {
             <img
               src="/images/moovimiento.png"
               alt="Logo"
-              className="min-w-fit w-5 h-5 md:w-7 md:h-7"
+              className="w-5 h-5 md:w-7 md:h-7"
             />
             <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
               {siteDetails.siteName}

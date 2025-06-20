@@ -1,22 +1,22 @@
-import { BsBarChartFill, BsFillStarFill } from "react-icons/bs";
-import { PiGlobeFill } from "react-icons/pi";
-
+import { BsFillStarFill } from "react-icons/bs";
 import { IStats } from "@/types";
 
 export const stats: IStats[] = [
-    {
-        title: "20M+",
-        icon: <BsBarChartFill size={34} className="text-blue-500" />,
-        description: "Transactions processed securely every day, providing real-time insights."
-    },
-    {
-        title: "5.0",
-        icon: <BsFillStarFill size={34} className="text-yellow-500" />,
-        description: "Star rating, consistently maintained across app stores."
-    },
-    {
-        title: "200+ ",
-        icon: <PiGlobeFill size={34} className="text-green-600" />,
-        description: "Financial Institutions, seamlessly integrated, so you can manage all accounts."
-    }
+  {
+    title: "5.0",
+    icon: <BsFillStarFill size={34} className="text-yellow-500" />,
+    description:
+      "Con Moovimiento, podés confiar en la calidad y frescura de nuestros frutos secos, siempre disponibles para acompañarte.",
+  },
+  {
+    title: "5.0",
+    icon: <BsFillStarFill size={34} className="text-yellow-500" />,
+    description: "¡Siempre recomendados por quienes buscan lo mejor!",
+  },
+  {
+    title: "5.0",
+    icon: <BsFillStarFill size={34} className="text-yellow-500" />,
+    description:
+      "En Moovimiento, tenemos una variedad de frutos secos para que disfrutes el snack perfecto en cualquier momento del día.",
+  },
 ];

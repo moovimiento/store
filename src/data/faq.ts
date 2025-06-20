@@ -2,24 +2,18 @@ import { IFAQ } from "@/types";
 import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
-    {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
-    },
-    {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
-    },
-    {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
-    },
-    {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
-    },
-    {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
-    }
+  {
+    question: `¿Es seguro comprar en ${siteDetails.siteName}?`,
+    answer:
+      "Absolutamente. Realizamos tus pedidos de frutos secos de manera segura a través de WhatsApp, y el pago se efectúa a través de Mercado Pago, garantizando transacciones protegidas.",
+  },
+  {
+    question: `¿Puedo disfrutar de los frutos secos de ${siteDetails.siteName} en cualquier momento?`,
+    answer:
+      "¡Absolutamente! Nuestros frutos secos siempre llegan frescos y listos para disfrutar. Gracias a nuestro proceso de selección y entrega rápida en Ciudad Universitaria, garantizamos que siempre recibas productos frescos y de la mejor calidad.",
+  },
+  {
+    question: "¿Por qué elegir frutos secos como snack?",
+    answer: `Porque son prácticos, saludables y naturales. Los frutos secos te aportan energía, proteínas y grasas buenas que te ayudan a rendir mejor en el estudio, el trabajo o el entrenamiento.`,
+  },
 ];

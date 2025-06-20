@@ -15,20 +15,18 @@ const HomePage: React.FC = () => {
       <Hero />
       <Logos />
       <Container>
-        <Benefits />
-
         <Section
-          id="pricing"
-          title="Pricing"
-          description="Simple, transparent pricing. No surprises."
+          id="precios"
+          title="Precios"
+          description="Precios simples y transparentes. Sin sorpresas."
         >
           <Pricing />
         </Section>
 
         <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
+          id="testimonios"
+          title="Qué dicen nuestros clientes"
+          description="Escuchá a quienes ya han elegido Moovimiento."
         >
           <Testimonials />
         </Section>
@@ -36,7 +34,7 @@ const HomePage: React.FC = () => {
         <FAQ />
 
         <Stats />
-        
+
         <CTA />
       </Container>
     </>

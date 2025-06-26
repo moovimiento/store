@@ -22,15 +22,9 @@ const HomePage: React.FC = () => {
           <Pricing />
         </Section>
 
-        <Section
-          id="testimonios"
-          title="Qué dicen nuestros clientes"
-          description="Escuchá a quienes ya han elegido Moovimiento."
-        >
-          <Testimonials />
-        </Section>
-
-        <FAQ />
+        <div id="faq">
+          <FAQ />
+        </div>
 
         <Stats />
 

@@ -18,8 +18,8 @@ export const footerDetails: {
       url: "#precios",
     },
     {
-      text: "Testimonios",
-      url: "#testimonios",
+      text: "Preguntas frecuentes",
+      url: "#faq",
     },
   ],
   email: "goalritmo@gmail.com",

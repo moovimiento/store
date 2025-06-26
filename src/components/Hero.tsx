@@ -1,6 +1,6 @@
 import React from "react";
 
-import AppStoreButton from "./AppStoreButton";
+import BuyNowButtonBlack from "./BuyNowButtonBlack";
 
 import { heroDetails } from "@/data/hero";
 
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           {heroDetails.subheading}
         </p>
         <div className="mt-6 mb-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-          <AppStoreButton dark />
+          <BuyNowButtonBlack />
         </div>
         {/* <Image
           src={heroDetails.centerImageSrc}

@@ -103,7 +103,7 @@ const Header: React.FC = () => {
                 className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
                 onClick={toggleMenu}
               >
-                Get Started
+                Comprar
               </Link>
             </li>
           </ul>

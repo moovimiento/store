@@ -1,7 +1,5 @@
 export const ctaDetails = {
-  heading: "Únete a nuestra comunidad de personas activas y saludables.",
+  heading: "Unite a la comunidad de personas activas y saludables.",
   subheading:
-    "Comienza tu camino hacia el bienestar con Moovimiento. ¡Haz tu pedido hoy y transforma tu energía con nuestros frutos secos!",
-  appStoreUrl: "#",
-  googlePlayUrl: "#",
+    "Continuá tu camino hacia el bienestar con Moovimiento. ¡Hacé tu pedido hoy y transformá tu energía con nuestros frutos secos!",
 };

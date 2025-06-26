@@ -3,7 +3,7 @@ import { IPricing } from "@/types";
 export const tiers: IPricing[] = [
   {
     name: "1 Cápsula = 150g",
-    price: 3000,
+    price: 3300,
     features: ["Pasas de uva", "Almendras", "Nueces", "Peras deshidratadas"],
     whatsappLink:
       "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+C%C3%A1psula+de+Frutos+Secos+de+%243000+%F0%9F%A5%9C%EF%B8%8F%E2%9A%A1%EF%B8%8F%F0%9F%8C%B1&type=phone_number&app_absent=0",

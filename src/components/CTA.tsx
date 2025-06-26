@@ -1,6 +1,6 @@
 import { ctaDetails } from "@/data/cta";
 
-import BuyNowButtonBlack from "./BuyNowButtonBlack";
+import BuyNowButtonWhite from "./BuyNowButtonWhite";
 
 const CTA: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const CTA: React.FC = () => {
             <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
 
             <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
-              <BuyNowButtonBlack />
+              <BuyNowButtonWhite />
             </div>
           </div>
         </div>

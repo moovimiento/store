@@ -17,7 +17,7 @@ const BuyNowButtonWhite = ({ dark }: { dark?: boolean }) => {
       >
         <div className="mr-3">
           <Image
-            src="/images/moovimiento-white.png" // Ruta relativa desde /public
+            src="/images/moovimiento.png" // Ruta relativa desde /public
             alt="Logo"
             width={30}
             height={30}

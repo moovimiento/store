@@ -10,10 +10,10 @@ export const tiers: IPricing[] = [
   },
   {
     name: "5 Cápsulas (750g)",
-    price: 13300,
+    price: 15000,
     features: ["Pasas de uva", "Almendras", "Nueces", "Peras deshidratadas"],
     whatsappLink:
-      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+promo+de+5+C%C3%A1psulas+de+Frutos+Secos+por+%2413300+%F0%9F%A5%9C%EF%B8%8F%E2%9A%A1%EF%B8%8F%F0%9F%8C%B1&type=phone_number&app_absent=0",
+      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+promo+de+5+C%C3%A1psulas+de+Frutos+Secos+por+%2415000+%F0%9F%A5%9C%EF%B8%8F%E2%9A%A1%EF%B8%8F%F0%9F%8C%B1&type=phone_number&app_absent=0",
   },
   {
     name: "Promo de +15 Cápsulas",

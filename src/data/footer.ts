@@ -22,11 +22,11 @@ export const footerDetails: {
       url: "#faq",
     },
   ],
-  email: "goalritmo@gmail.com",
+  email: "gonza@moovimiento.com",
   // telephone: "+54 (351) 153239624",
   socials: {
     // twitter: "https://twitter.com/moovimiento",
-    // youtube: 'https://youtube.com',
+    // youtube: 'https://youtube.com/@moovimiento',
     instagram: "https://www.instagram.com/moovimiento",
   },
 };

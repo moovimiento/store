@@ -27,7 +27,7 @@ const FAQ: React.FC = () => {
             // href="mailto:"
             className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold text-center lg:text-left"
           >
-            goalritmo@gmail.com
+            gonza@moovimiento.com
           </a>
         </div>
 

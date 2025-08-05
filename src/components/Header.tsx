@@ -16,11 +16,14 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const isExternalLink = (url: string) => {
+    return url.startsWith('http://') || url.startsWith('https://');
+  };
+
   return (
     <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
       <Container className="!px-0">
         <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/images/moovimiento.png"
@@ -32,16 +35,26 @@ const Header: React.FC = () => {
             </span>
           </Link>
 
-          {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
               <li key={item.text}>
-                <Link
-                  href={item.url}
-                  className="text-foreground hover:text-foreground-accent transition-colors"
-                >
-                  {item.text}
-                </Link>
+                {isExternalLink(item.url) ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground hover:text-foreground-accent transition-colors"
+                  >
+                    {item.text}
+                  </a>
+                ) : (
+                  <Link
+                    href={item.url}
+                    className="text-foreground hover:text-foreground-accent transition-colors"
+                  >
+                    {item.text}
+                  </Link>
+                )}
               </li>
             ))}
             <li>
@@ -54,7 +67,6 @@ const Header: React.FC = () => {
             </li>
           </ul>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
@@ -74,7 +86,6 @@ const Header: React.FC = () => {
         </nav>
       </Container>
 
-      {/* Mobile Menu with Transition */}
       <Transition
         show={isOpen}
         enter="transition ease-out duration-200 transform"
@@ -88,13 +99,25 @@ const Header: React.FC = () => {
           <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
             {menuItems.map((item) => (
               <li key={item.text}>
-                <Link
-                  href={item.url}
-                  className="text-foreground hover:text-primary block"
-                  onClick={toggleMenu}
-                >
-                  {item.text}
-                </Link>
+                {isExternalLink(item.url) ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground hover:text-primary block"
+                    onClick={toggleMenu}
+                  >
+                    {item.text}
+                  </a>
+                ) : (
+                  <Link
+                    href={item.url}
+                    className="text-foreground hover:text-primary block"
+                    onClick={toggleMenu}
+                  >
+                    {item.text}
+                  </Link>
+                )}
               </li>
             ))}
             <li>

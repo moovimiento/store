@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
-  const { name, price, features, whatsappLink } = tier;
+  const { name, price, features, duration, whatsappLink } = tier;
 
   return (
     <div
@@ -28,8 +28,9 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
             <span className="text-lg font-normal text-gray-600"> pesos</span>
           )}
         </p>
+        <p className="text-foreground-accent mb-5">{duration}</p>
         <a
-          href={whatsappLink} // Enlace de WhatsApp dinámico
+          href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -44,8 +45,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
         </a>
       </div>
       <div className="p-6 mt-1">
-        <p className="font-bold mb-0">FRUTOS SECOS (Y FRUTAS)</p>
-        <p className="text-foreground-accent mb-5">que las componen:</p>
+        <p className="font-bold mb-4">FRUTOS SECOS INCLUIDOS:</p>
         <ul className="space-y-4 mb-8">
           {features.map((feature, index) => (
             <li key={index} className="flex items-center">

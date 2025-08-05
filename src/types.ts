@@ -19,6 +19,7 @@ export interface IBenefitBullet {
 export interface IPricing {
   name: string;
   price: number | string;
+  duration: string;
   features: string[];
   whatsappLink?: string;
 }

@@ -16,4 +16,8 @@ export const faqs: IFAQ[] = [
     question: "¿Por qué elegir frutos secos como snack?",
     answer: `Porque son prácticos, saludables y naturales. Los frutos secos te aportan energía, proteínas y grasas buenas que te ayudan a rendir mejor en el estudio, el trabajo o el entrenamiento.`,
   },
+  {
+    question: "¿Puedo personalizar la composición de mis cápsulas de frutos secos?",
+    answer: `¡Por supuesto! Cada cápsula viene con 20% de cada fruto seco, pero puedes personalizarlo. Si tienes alergias o preferencias, podemos ajustar la composición. Por ejemplo, 0% de almendras y 40% de nueces. ¡Solo avísanos al hacer tu pedido!`,
+  },
 ];

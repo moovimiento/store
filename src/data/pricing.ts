@@ -4,6 +4,7 @@ export const tiers: IPricing[] = [
   {
     name: "1 Cápsula (180g)",
     price: 3900,
+    duration: "Energía para varios días de la semana",
     features: [
       "Pasas de uva",
       "Almendras",
@@ -17,6 +18,7 @@ export const tiers: IPricing[] = [
   {
     name: "5 Cápsulas (900g)",
     price: 18000,
+    duration: "Energía para todo el mes",
     features: [
       "Pasas de uva",
       "Almendras",
@@ -30,6 +32,7 @@ export const tiers: IPricing[] = [
   {
     name: "Promo de +15 Cápsulas",
     price: "Personalizado",
+    duration: "Energía para eventos especiales",
     features: [
       "Pasas de uva",
       "Almendras",

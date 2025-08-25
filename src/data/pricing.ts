@@ -2,8 +2,8 @@ import { IPricing } from "@/types";
 
 export const tiers: IPricing[] = [
   {
-    name: "1 Cápsula (180g)",
-    price: 3900,
+    name: "1 Cápsula (220g)",
+    price: 4000,
     duration: "Energía para varios días de la semana",
     features: [
       "Pasas de uva",
@@ -13,10 +13,10 @@ export const tiers: IPricing[] = [
       "Banana chips",
     ],
     whatsappLink:
-      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+C%C3%A1psula+de+Frutos+Secos+de+%243900+⚡️&type=phone_number&app_absent=0",
+      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+C%C3%A1psula+de+Frutos+Secos+de+%244000+⚡️&type=phone_number&app_absent=0",
   },
   {
-    name: "5 Cápsulas (900g)",
+    name: "5 Cápsulas (1100g)",
     price: 18000,
     duration: "Energía para todo el mes",
     features: [

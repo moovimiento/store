@@ -51,10 +51,10 @@ const Hero: React.FC = () => {
         href="https://instagram.com/moovimiento"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-6 left-6 z-10 bg-black hover:bg-gray-800 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105"
+        className="absolute bottom-6 left-6 z-10 bg-black text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 group"
         aria-label="Síguenos en Instagram"
       >
-        <FaInstagram className="w-6 h-6" />
+        <FaInstagram className="w-6 h-6 group-hover:text-yellow-400 transition-colors" />
       </a>
     </section>
   );

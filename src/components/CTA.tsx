@@ -12,9 +12,12 @@ const CTA: React.FC = () => {
           </div>
 
           <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">
-              {ctaDetails.heading}
-            </h2>
+            <h2 
+              className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl"
+              dangerouslySetInnerHTML={{
+                __html: ctaDetails.heading.replace('saludables', '<span class="text-yellow-400">saludables</span>')
+              }}
+            />
 
             <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
 

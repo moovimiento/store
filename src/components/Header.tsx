@@ -60,7 +60,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="#precios"
-                className="text-black font-bold bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 inline-block"
+                className="text-black font-bold bg-primary hover:bg-primary px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 inline-block"
               >
                 Comprar
               </Link>
@@ -123,7 +123,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="#cta"
-                className="text-black font-bold bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit transition-all duration-300 hover:scale-105"
+                className="text-black font-bold bg-primary hover:bg-primary px-5 py-2 rounded-full block w-fit transition-all duration-300 hover:scale-105"
                 onClick={toggleMenu}
               >
                 Comprar

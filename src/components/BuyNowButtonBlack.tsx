@@ -8,10 +8,10 @@ const BuyNowButtonBlack = ({ dark }: { dark?: boolean }) => {
       <button
         type="button"
         className={clsx(
-          "flex items-center justify-center min-w-[205px] mt-3 px-6 h-14 rounded-full w-full sm:w-fit",
+          "flex items-center justify-center min-w-[205px] mt-3 px-6 h-14 rounded-full w-full sm:w-fit transition-colors",
           {
-            "text-white bg-foreground": !dark,
-            "text-foreground bg-white": dark,
+            "text-white bg-foreground hover:bg-gray-600": !dark,
+            "text-foreground bg-white hover:bg-gray-200": dark,
           }
         )}
       >

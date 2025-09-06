@@ -33,9 +33,10 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
+          className="transition-all duration-300 hover:scale-105 inline-block w-full"
         >
           <button
-            className={clsx("w-full py-3 px-4 rounded-full transition-colors", {
+            className={clsx("w-full py-3 px-4 rounded-full font-bold", {
               "bg-primary hover:bg-primary-accent": highlight,
               "bg-hero-background hover:bg-gray-200": !highlight,
             })}

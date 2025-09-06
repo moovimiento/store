@@ -21,21 +21,21 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
+    <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute md:top-0 z-50 mx-auto w-full">
       <Container className="!px-0">
-        <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
+        <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-8">
           <Link href="/" className="flex items-center gap-2">
             <img
-              src="/images/moovimiento.png"
+              src="/images/moovimiento-white.png"
               alt="Logo"
               className="w-5 h-5 md:w-7 md:h-7"
             />
-            <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
+            <span className="manrope text-xl font-semibold text-white cursor-pointer">
               {siteDetails.siteName}
             </span>
           </Link>
 
-          <ul className="hidden md:flex space-x-6">
+          <ul className="hidden md:flex space-x-6 items-center">
             {menuItems.map((item) => (
               <li key={item.text}>
                 {isExternalLink(item.url) ? (
@@ -43,14 +43,14 @@ const Header: React.FC = () => {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-foreground-accent transition-colors"
+                    className="text-white hover:text-yellow-400 transition-colors font-bold"
                   >
                     {item.text}
                   </a>
                 ) : (
                   <Link
                     href={item.url}
-                    className="text-foreground hover:text-foreground-accent transition-colors"
+                    className="text-white hover:text-yellow-400 transition-colors font-bold"
                   >
                     {item.text}
                   </Link>
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="#precios"
-                className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"
+                className="text-black font-bold bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 inline-block"
               >
                 Comprar
               </Link>
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-primary block"
+                    className="text-foreground hover:text-yellow-400 block font-bold"
                     onClick={toggleMenu}
                   >
                     {item.text}
@@ -123,7 +123,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="#cta"
-                className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
+                className="text-black font-bold bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit transition-all duration-300 hover:scale-105"
                 onClick={toggleMenu}
               >
                 Comprar

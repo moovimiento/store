@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const BuyNowButtonWhite = ({ dark }: { dark?: boolean }) => {
   return (
-    <a href="#precios">
+    <a href="#precios" className="transition-all duration-300 hover:scale-105 inline-block">
       <button
         type="button"
         className={clsx(

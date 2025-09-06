@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const BuyNowButtonBlack = ({ dark }: { dark?: boolean }) => {
   return (
-    <a href="#precios">
+    <a href="#precios" className="transition-all duration-300 hover:scale-105 inline-block">
       <button
         type="button"
         className={clsx(
@@ -17,7 +17,7 @@ const BuyNowButtonBlack = ({ dark }: { dark?: boolean }) => {
       >
         <div className="mr-3">
           <Image
-            src="/images/moovimiento-white.png" // Ruta relativa desde /public
+            src={dark ? "/images/moovimiento.png" : "/images/moovimiento-white.png"} // Ruta relativa desde /public
             alt="Logo"
             width={30}
             height={30}

@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center pb-16 pt-32 md:pt-24 md:pb-24 px-5 min-h-screen"
+      className="relative flex items-center justify-center pb-16 pt-32 md:pt-24 md:pb-24 px-5 min-h-screen bg-black"
     >
       <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
         <div 

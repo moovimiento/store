@@ -56,8 +56,8 @@ const Footer: React.FC = () => {
       </div>
       <div className="mt-8 md:text-center text-foreground-accent px-6">
         <p>
-          Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}.
-          Todos los derechos reservados.
+          {siteDetails.siteName} &copy; {new Date().getFullYear()} | 
+          Generado con 💛 por <a href="https://catsulecorp.com/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-secondary/80 transition-colors font-medium">Catsule Corp</a>
         </p>
       </div>
     </footer>

@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute md:top-0 z-50 mx-auto w-full animate-fade-in-down">
       <Container className="!px-0">
-        <nav className="md:shadow-none bg-transparent md:bg-transparent mx-auto flex justify-between items-center py-6 px-5 md:py-8">
+        <nav className="md:shadow-none bg-black/50 md:bg-transparent mx-auto flex justify-between items-center py-6 px-5 md:py-8">
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/images/moovimiento-white.png"
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
+              className="bg-transparent text-yellow-400 focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -88,14 +88,14 @@ const Header: React.FC = () => {
 
       <Transition
         show={isOpen}
-        enter="transition ease-out duration-200 transform"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="transition ease-in duration-75 transform"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 -translate-y-3/4"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 -translate-y-3/4"
       >
-        <div id="mobile-menu" className="md:hidden bg-transparent">
+        <div id="mobile-menu" className="md:hidden bg-black/50">
           <ul className="flex flex-row flex-wrap gap-4 pt-1 pb-6 px-6 justify-center items-center">
             {menuItems.map((item) => (
               <li key={item.text}>

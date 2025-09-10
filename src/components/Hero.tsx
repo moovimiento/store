@@ -23,9 +23,10 @@ const Hero: React.FC = () => {
     >
       <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
         <div 
-          className="absolute inset-0 h-full w-full bg-cover bg-center bg-no-repeat animate-fade-in"
+          className="absolute inset-0 h-full w-full bg-cover bg-no-repeat animate-fade-in md:bg-center"
           style={{
-            backgroundImage: "url('/images/Capsule Corp.png')"
+            backgroundImage: "url('/images/Capsule Corp.png')",
+            backgroundPosition: "30% center"
           }}
         ></div>
         <div className="absolute inset-0 h-full w-full bg-black/40"></div>

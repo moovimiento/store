@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute md:top-0 z-50 mx-auto w-full animate-fade-in-down">
       <Container className="!px-0">
-        <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-8">
+        <nav className="md:shadow-none bg-transparent md:bg-transparent mx-auto flex justify-between items-center py-6 px-5 md:py-8">
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/images/moovimiento-white.png"
@@ -95,8 +95,8 @@ const Header: React.FC = () => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div id="mobile-menu" className="md:hidden bg-white shadow-lg">
-          <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
+        <div id="mobile-menu" className="md:hidden bg-transparent">
+          <ul className="flex flex-row flex-wrap gap-4 pt-1 pb-6 px-6 justify-center items-center">
             {menuItems.map((item) => (
               <li key={item.text}>
                 {isExternalLink(item.url) ? (
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-yellow-400 block font-bold"
+                    className="text-white hover:text-yellow-400 block font-bold"
                     onClick={toggleMenu}
                   >
                     {item.text}
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
                 ) : (
                   <Link
                     href={item.url}
-                    className="text-foreground hover:text-primary block"
+                    className="text-white hover:text-yellow-400 block font-bold"
                     onClick={toggleMenu}
                   >
                     {item.text}

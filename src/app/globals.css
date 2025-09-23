@@ -100,6 +100,22 @@ body {
   animation: fade-in-zoom 1.2s ease-out;
 }
 
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 12s ease-in-out infinite;
+}
+
 .manrope {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;

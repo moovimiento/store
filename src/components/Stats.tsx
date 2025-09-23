@@ -3,14 +3,14 @@ import { stats } from "@/data/stats"
 const Stats: React.FC = () => {
     return (
         <section id="stats" className="py-10 lg:py-20">
-            <div className="grid sm:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-3 gap-8 px-6 md:px-0">
                 {stats.map(stat => (
                     <div key={stat.title} className="text-center sm:text-left max-w-md sm:max-w-full mx-auto group">
                         <h3 className="mb-5 flex items-center gap-2 text-3xl font-semibold justify-center sm:justify-start">
                             {stat.icon}
                             {stat.title}
                         </h3>
-                        <p className="text-foreground-accent">{stat.description}</p>
+                        <p className="text-foreground-accent px-4 md:px-0">{stat.description}</p>
                     </div>
                 ))}
             </div>

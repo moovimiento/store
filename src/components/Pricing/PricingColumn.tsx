@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
-  const { name, price, features, duration, whatsappLink } = tier;
+  const { name, price, features, duration } = tier;
 
   return (
     <div

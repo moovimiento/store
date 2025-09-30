@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <Link href="/" className="flex items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/moovimiento.png"
               alt="Logo"

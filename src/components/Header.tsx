@@ -25,6 +25,7 @@ const Header: React.FC = () => {
       <Container className="!px-0">
         <nav className="md:shadow-none bg-black/50 md:bg-transparent mx-auto flex justify-between items-center py-6 px-5 md:py-8">
           <Link href="/" className="flex items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/moovimiento-white.png"
               alt="Logo"

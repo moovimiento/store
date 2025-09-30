@@ -30,7 +30,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
         </p>
         <p className="text-foreground-accent mb-5">{duration}</p>
         <a
-          href={whatsappLink}
+          href="https://mas.moovimiento.com"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:scale-105 inline-block w-full"

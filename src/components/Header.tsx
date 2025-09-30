@@ -58,12 +58,14 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <Link
-                href="#precios"
+              <a
+                href="https://mas.moovimiento.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-black font-bold bg-primary hover:bg-primary px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 inline-block"
               >
                 Comprar
-              </Link>
+              </a>
             </li>
           </ul>
 
@@ -121,13 +123,15 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <Link
-                href="#cta"
+              <a
+                href="https://mas.moovimiento.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-black font-bold bg-primary hover:bg-primary px-5 py-2 rounded-full block w-fit transition-all duration-300 hover:scale-105"
                 onClick={toggleMenu}
               >
                 Comprar
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

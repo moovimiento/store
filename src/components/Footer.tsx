@@ -54,10 +54,16 @@ const Footer: React.FC = () => {
 
         </div>
       </div>
-      <div className="mt-8 md:text-center text-foreground-accent px-6">
-        <p>
-        <a href="https://gonza.gr" target="_blank" rel="noopener noreferrer" className="text-yellow-500 transition-colors font-medium hover:opacity-80">💻 🧉 Desarrollado por Gonza</a>
-        </p>
+      <div className="max-w-7xl w-full mx-auto px-6">
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-foreground-accent gap-2">
+          <p>
+            <a href="https://gonza.gr" target="_blank" rel="noopener noreferrer" className="text-foreground-accent transition-colors font-medium hover:text-yellow-500">💻 🧉 Desarrollado por Gonza</a>
+          </p>
+          <p className="text-foreground-accent">
+            <span className="md:hidden">🇦🇷 Hecho en Argentina</span>
+            <span className="hidden md:inline">Hecho en Argentina 🇦🇷</span>
+          </p>
+        </div>
       </div>
     </footer>
   );

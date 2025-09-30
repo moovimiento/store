@@ -5,7 +5,7 @@ export const faqs: IFAQ[] = [
   {
     question: `¿Es seguro comprar en ${siteDetails.siteName}?`,
     answer:
-      "Absolutamente. Realizamos tus pedidos de frutos secos de manera segura a través de WhatsApp, y el pago se efectúa a través de Mercado Pago, garantizando transacciones protegidas.",
+      "Absolutamente. Al hacer clic en 'Comprar' serás dirigido a mas.moovimiento.com donde podrás armar tus propios mixs personalizados y pagar de manera segura a través de la API de Mercado Pago, garantizando transacciones protegidas.",
   },
   {
     question: `¿Puedo disfrutar de los frutos secos de ${siteDetails.siteName} en cualquier momento?`,
@@ -18,6 +18,6 @@ export const faqs: IFAQ[] = [
   },
   {
     question: "¿Puedo personalizar la composición de mis cápsulas de frutos secos?",
-    answer: `¡Por supuesto! Cada cápsula viene con 20% de cada fruto seco, pero puedes personalizarlo. Si tienes alergias o preferencias, podemos ajustar la composición. Por ejemplo, 0% de almendras y 40% de nueces. ¡Solo avísanos al hacer tu pedido!`,
+    answer: `¡Por supuesto! Cada cápsula viene con 20% de cada fruto seco, pero puedes personalizarlo. Al hacer clic en "Comprar" serás dirigido a una web donde podrás armar tus propios mixs personalizados. Si tienes alergias o preferencias, puedes ajustar la composición fácilmente. Por ejemplo, 0% de almendras y 40% de nueces.`,
   },
 ];

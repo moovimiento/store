@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-hero-background text-foreground py-10">
       <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <Link href="/" className="flex items-center gap-2">
+        <div className="text-center md:text-left">
+          <Link href="/" className="flex items-center gap-2 justify-center md:justify-start">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/moovimiento.png"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             {footerDetails.subheading}
           </p>
         </div>
-        <div>
+        <div className="text-center">
           <h4 className="text-lg font-semibold mb-4">Accesos Directos</h4>
           <ul className="text-foreground-accent">
             {footerDetails.quickLinks.map((link) => (
@@ -37,17 +37,19 @@ const Footer: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Instagram</h4>
+        <div className="text-center md:text-right">
+          <h4 className="text-lg font-semibold mb-4 flex items-center gap-2 justify-center md:justify-end">
+            {getPlatformIconByName('instagram')}
+            Instagram
+          </h4>
 
           {footerDetails.email && (
             <a
               href={footerDetails.socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-foreground-accent hover:text-foreground"
+              className="text-foreground-accent hover:text-foreground justify-center md:justify-end"
             >
-              {getPlatformIconByName('instagram')}
               @moovimiento
             </a>
           )}
@@ -56,7 +58,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="max-w-7xl w-full mx-auto px-6">
-        <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-foreground-accent gap-2">
+        <div className="mt-12 flex flex-col md:flex-row justify-between items-center text-foreground-accent gap-2">
           <p>
             <a href="https://gonza.gr" target="_blank" rel="noopener noreferrer" className="text-foreground-accent transition-colors font-medium hover:text-yellow-500">💻 🧉 Desarrollado por Gonza</a>
           </p>

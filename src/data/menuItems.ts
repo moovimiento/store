@@ -2,7 +2,7 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
   {
-    text: "Precios",
+    text: "Precios y Promos",
     url: "#precios",
   },
   {

@@ -49,7 +49,7 @@ const HomePage: React.FC = () => {
         <div ref={pricingRef} className="animate-fade-in-up">
           <Section
             id="precios"
-            title="Precios"
+            title="Precios y Promos"
             description="Precios simples y transparentes. Sin sorpresas."
           >
             <Pricing />

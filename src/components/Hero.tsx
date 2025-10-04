@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
     >
       <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
         <div 
-          className="absolute inset-0 h-full w-full bg-cover bg-no-repeat md:bg-center animate-slow-zoom"
+          className="absolute inset-0 h-full w-full bg-cover bg-no-repeat bg-center animate-slow-zoom"
           style={{
             backgroundImage: "url('/images/Capsule Corp.png')",
-            backgroundPosition: "30% center",
+            backgroundPosition: "55% center",
             backgroundSize: "cover"
           }}
         ></div>

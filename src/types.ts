@@ -21,7 +21,6 @@ export interface IPricing {
   price: number | string;
   duration: string;
   features: string[];
-  whatsappLink?: string;
 }
 
 export interface IFAQ {

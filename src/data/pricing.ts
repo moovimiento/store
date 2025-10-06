@@ -12,8 +12,6 @@ export const tiers: IPricing[] = [
       "Peras deshidratadas",
       "Banana chips",
     ],
-    whatsappLink:
-      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+C%C3%A1psula+de+Frutos+Secos+de+%244000+⚡️&type=phone_number&app_absent=0",
   },
   {
     name: "5 Cápsulas (1100g)",
@@ -26,12 +24,10 @@ export const tiers: IPricing[] = [
       "Peras deshidratadas",
       "Banana chips",
     ],
-    whatsappLink:
-      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+promo+de+5+C%C3%A1psulas+de+Frutos+Secos+por+%2418000+⚡️&type=phone_number&app_absent=0",
   },
   {
     name: "15 Cápsulas (3300g)",
-    price: 48000,
+    price: 53000,
     duration: "Energía para eventos especiales",
     features: [
       "Pasas de uva",
@@ -40,7 +36,5 @@ export const tiers: IPricing[] = [
       "Peras deshidratadas",
       "Banana chips",
     ],
-    whatsappLink:
-      "https://api.whatsapp.com/send/?phone=543513239624&text=Hola%21+Quiero+la+promo+de+15+C%C3%A1psulas+de+Frutos+Secos+por+%2448000+📦✨&type=phone_number&app_absent=0",
   },
 ];
